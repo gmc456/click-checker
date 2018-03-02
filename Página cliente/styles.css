@@ -26,9 +26,9 @@ body {
 .menu-list {
   display: block;
   list-style-type: none;
-  margin: 0 5px 5px 0;
-  padding: 0px;
-  margin-top: 5px;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
 }
 
 /**
@@ -38,7 +38,8 @@ body {
 .menu-list > li {
   display: inline;
   text-align: center;
-  padding-right: 20px;
+  font-size: 15px;
+  margin: 0 35px;
 }
 
 /**
@@ -48,7 +49,7 @@ body {
 
 a {
   text-decoration: none;
-  color: pink;
+  color: black;
 }
 
 /* ======================= CABECERA ======================= */
@@ -61,10 +62,8 @@ a {
 
 header {
   width: 100%;
-  background-color: black;
+  background-color: #22324D;
   color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 /**
@@ -72,9 +71,13 @@ header {
  */
 
 #header-menu {
+/*
   float: left;
   display: inline-block;
   margin-left: 10px;
+*/
+  text-align: center;
+  background: #FF88A8;
 }
 
 /**
@@ -82,10 +85,15 @@ header {
  */
 
 #header-form {
+/*
   float: right;
   display: inline-block;
   margin-right: 20px;
   margin-top: 5px;
+*/
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 /**
@@ -97,8 +105,29 @@ header {
   display: block;
   clear: both;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h1 {
+  line-height: .35;
+  font-size: 65px;
+}
+
+#header-title-description {
+  padding-top: 10px;
+}
+
+h2{
+  font-size:35px;
+}
+
+h2,h3{
+  color: #22324D;
+}
+
+span{
+  font-weight: bold;
 }
 
 /* ======================= CONTENIDO ======================= */
@@ -122,17 +151,8 @@ header {
  */
 
 .content-text {
-  margin: 15px 20px 15px 20px;
-}
-
-/**
- * La imagen y el vídeo del contenido son bloques centrados.
- */
-
-#content-quote,
-#content-video {
-  display: block;
-  margin: 30px auto;
+  margin: 0 40px 0 40px;
+  text-align: justify;
 }
 
 /* ======================= PIE DE PÁGINA ======================= */

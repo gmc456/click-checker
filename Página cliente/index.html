@@ -9,108 +9,140 @@
 </head>
 <body>
   <header>
-    <div>
-      <nav id="header-menu">
-        <ul class="menu-list">
-          <li><a target="_blank" href="http://www.ual.es">Página de la Universidad de Almería</a></li>
-          <li><a target="_blank" href="http://cms.ual.es/UAL/estudios/grados/GRADO4015">Grado en Informática - UAL</a></li>
-          <li><a target="_blank" href="http://cms.ual.es/UAL/estudios/grados/plandeestudios/asignaturas/asignatura/GRADO4015?idAss=40153316&idTit=4015">Página de la asignatura</a></li>
-        </ul>
-      </nav>
+    <nav id="header-menu">
+      <ul class="menu-list">
+        <li><a target="_blank" href="http://www.ual.es">Página de la Universidad de Almería</a></li>
+        <li><a target="_blank" href="http://cms.ual.es/UAL/estudios/grados/GRADO4015">Grado en Informática - UAL</a></li>
+        <li><a target="_blank" href="http://cms.ual.es/UAL/estudios/grados/plandeestudios/asignaturas/asignatura/GRADO4015?idAss=40153316&idTit=4015">Página de la asignatura</a></li>
+      </ul>
+    </nav>
+    <form id="header-form" name="form" method="post" action="inicioSesion.php">
+      <input id="email" name="email" type="text" placeholder="Introduce tu email"
+      onfocus="if(this.placeholder=='') this.placeholder='Introduce tu email'"/>
+      <input id="contrasena" name="contrasena" type="password" placeholder=
+      "Introduce tu contraseña" onfocus="if(this.placeholder=='')this.placeholder=
+      'Introduce tu contraseña'"/>
+      <input type="submit" name="submit" id="button" value="Iniciar sesión"/>
+    </form>
 
-      <form id="header-form" name="form" method="post" action="inicioSesion.php">
-        <input id="email" name="email" type="text" placeholder="Introduce tu email"
-        onfocus="if(this.placeholder=='') this.placeholder='Introduce tu email'"/>
-        <input id="contrasena" name="contrasena" type="password" placeholder=
-        "Introduce tu contraseña" onfocus="if(this.placeholder=='')this.placeholder=
-        'Introduce tu contraseña'"/>
-        <input type="submit" name="submit" id="button" value="Iniciar sesión"/>
-      </form>
+    <div id="header-title">
+      <h1>Negocio electrónico</h1>
+      <p id="header-title-description">
+        En esta página encontrarás algunos artículos interesantes que
+        complementarán los conocimientos de la asignatura de Negocio Electrónico
+      </p>
     </div>
-
-    <h1 id="header-title">Negocio electrónico</h1>
   </header>
 
   <div id="content">
-    <p class="content-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-
-    <p class="content-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-
-    <p class="content-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-
-    <p class="content-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-
-    <figure>
-      <img id="content-quote" src="https://i0.wp.com/cammansel.com/wp-content/uploads/2014/05/inspire.jpg?resize=660%2C371" alt="Einstein quote">
-    </figure>
-
-    <p class="content-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-
-    <p class="content-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-
-    <p class="content-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-
-    <iframe id="content-video" width="560" height="315" src=
-    "https://www.youtube.com/embed/yLHlaqLZy2Y" allow="autoplay;
-    encrypted-media" allowfullscreen></iframe>
-
-    <p class="content-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <article class="content-text">
+      <h2>¿Qué es el SEO y por qué lo necesito?</h2>
+      <h3>¿De dónde surge el término SEO (Search Engine Optimization)?</h3>
+      <p>
+        Los primeros buscadores surgieron a principios de los 90. Hasta que
+        Google apareció en 1996 se crearon muchos, entre ellos Yahoo. Comenzó el
+        boom de las Web. La gente se dio cuenta que realmente se podía ganar
+        dinero con ellas. Así llegaron a la conclusión de que necesitaban atraer
+        tráfico. ¿Cuál era el mejor método de atraer tráfico? <span>Los motores
+        de búsqueda.</span> En ese momento los dueños de las webs empezaron a
+        pensar cómo podrían alcanzar las primeras posiciones…
+        <span>¡El SEO había nacido!</span>
+      </p>
+      <h3>¿Qué es el SEO?</h3>
+      <span>Según Wikipedia, el SEO es: </span>
+      <p>
+        El posicionamiento en buscadores u optimización de motores de búsqueda
+        es el proceso de mejorar la visibilidad de un sitio web en los resultados
+        orgánicos de los diferentes buscadores. También es frecuente nombrarlo
+        por su título inglés, SEO (Search Engine Optimization).
+      </p>
+      <p>El SEO es una de las “disciplinas” que más ha cambiado en los últimos
+        años. Solo tenemos que fijarnos en la gran cantidad de actualizaciones
+        que ha habido de Penguin y Panda, y cómo éstas han dado un vuelta de 180
+        grados a lo que se entendía por SEO hasta hace poco. Ahora con el SEO se
+        persigue lo que el propio Matt Cutts califica como “Search Experience
+        Optimization” o lo que es lo mismo, “todo por el usuario”.
+      </p>
+      <p>Aunque existen miles de factores en los que un motor de búsqueda se basa
+        para posicionar una página u otra se podría decir que hay dos factores
+        básicos: la autoridad y la relevancia
+      </p>
+      <ul>
+        <li>
+          <span>La autoridad</span> es básicamente la popularidad de una web.
+          Cuanto más popular sea más valiosa es la información que contiene. Este
+          factor es el que un motor de búsqueda tiene más en cuenta dado que se
+          basa en la propia experiencia del usuario. Cuanto más se comparta un
+          contenido es que a más usuarios les ha parecido útil.
+        </li>
+        <li>
+          <span>La relevancia</span> es la relación que tiene una página frente
+          a una búsqueda dada. Esto no es simplemente que una página contenga un
+          montón de veces el término buscado (en los comienzos era así) si no que
+          un motor de búsqueda se basa en cientos de factores on-site para
+          determinar esto.
+        </li>
+      </ul>
+      <h3>El SEO se puede dividir en dos grandes grupos:</h3>
+      <ul>
+        <li>
+          <span>On-site:</span> El SEO on-site se preocupa de la relevancia. Se
+          asegura de que la web está optimizada para que el motor de búsqueda
+          entienda lo principal, que es el contenido de la misma. Dentro del SEO
+          On-site incluiríamos la optimización de keywords, tiempo de carga,
+          experiencia del usuario, optimización del código y formato de las URLs.
+        </li>
+        <li>
+          <span>Off-site:</span> El SEO off-site es la parte del trabajo SEO que
+          se centra en factores externos a la página web en la que trabajamos.
+          Los factores más importantes en el SEO off-site son el número y la
+          calidad de los enlaces, presencia en redes sociales, menciones en
+          medios locales, autoridad de la marca y rendimiento en los resultados
+          de búsqueda, es decir, el CTR que tengan nuestros resultados en un
+          motor de búsqueda. Seguro que estás pensando que todo esto está muy
+          bien y que es muy interesante pero que tu está aquí para saber porque
+          necesitas el SEO en tu web y que beneficios obtendrás si lo integras en
+          tu estrategia online.
+        </li>
+      </ul>
+      <h3>¿Por qué es el SEO importante?</h3>
+      <p>
+        La razón más importante por la que es necesario el SEO es porque
+        <span>hace más útil tu página web tanto para los usuarios como para los
+        motores de búsqueda.</span> Aunque estos aún no pueden ver una página web
+        como lo hace un humano. <span>El SEO es necesario para ayudar a los
+        motores de búsqueda a entender sobre qué trata cada página y si es o no
+        útil para los usuarios.<span>
+      </p>
+      <p>Ahora pongamos un ejemplo para ver las cosas más claras:</p>
+      <p>Tenemos un comercio electrónico dedicado a la venta de libros
+        infantiles. Pues bien, para el término “dibujos para colorear” hay unas
+        673.000 búsquedas mensuales. Suponiendo que el primer resultado que
+        aparece tras hacer una búsqueda en Google obtiene el 22% de clics
+        (CTR = 22%), obtendríamos unas <span>148.000 visitas al mes.</span>
+      </p>
+      <p>
+        Ahora bien ¿cuánto valen esas 148.000 visitas? Pues si para ese término
+        el gasto medio por clic es de 0,20€ estamos hablando de más de
+        29.000€/mes. Esto solo en España, si tenemos un negocio orientado a
+        varios países, <span>cada hora se realizan 1,4 billones de búsquedas en el
+        mundo.</span> De esas búsquedas, un 70% de los clics son en los
+        resultados orgánicos y el 75% de los usuarios no llegan a la segunda
+        página. Si tenemos en cuenta todo esto, vemos que son muchos clics al mes
+        para el primer resultado.
+      </p>
+      <p>
+        El SEO es la mejor manera de que tus usuarios te encuentren a través de
+        búsquedas en las que tu página web es relevante. Estos usuarios buscan lo
+        que tú les ofreces. La mejor manera de llegar a ellos es mediante un
+        motor de búsqueda.
+      </p>
+      <h3>¿Cómo funcionan los motores de búsqueda?</h3>
+      <p>
+        A continuación, te dejamos algunos vídeos para que puedas entender mejor
+        cómo funcionan los motores de búsqueda:
+      </p>
+    </article>
   </div>
 
   <footer>
@@ -119,7 +151,6 @@
       <li><a href="http://www.facebook.com">Facebook</a></li>
       <li><a href="http://www.instagram.com">Instagram</a></li>
     </ul>
-    <div></div>
   </footer>
 </body>
 </html>
