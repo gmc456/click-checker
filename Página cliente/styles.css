@@ -1,10 +1,58 @@
-header{
+*{
+    font-family: Segoe UI, sans-serif;
+}
+
+header {
   width: 100%;
   background: black;
-  font-family: sans-serif;
   color: white;
   padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 25px;
   margin-bottom: 20px;
+}
+
+form {
+  float: right;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+nav {
+  float: left;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 5px 5px 0;
+  padding: 0px;
+  margin-top: 5px;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  padding-right: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: pink;
+}
+
+h1 {
+  clear: both;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p{
+  padding-left: 20px;
+}
+
+footer > ul{
+  text-align: center;
+  background-color: black;
 }

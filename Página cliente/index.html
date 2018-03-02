@@ -2,33 +2,33 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Mi página de prueba</title>
+  <title>Negocio Electrónico</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
   <script src="modernizr-custom.js"></script>
 </head>
 <body>
   <header>
-    <h1>Mi página de prueba</h1>
-    <nav>
-      <ul>
-        <li><a target="_blank" href="http://www.ual.es">Página de la Universidad de Almería</a></li>
-        <li><a target="_blank" href="http://cms.ual.es/UAL/estudios/grados/GRADO4015">Grado en Informática - UAL</a></li>
-        <li><a href="#quote">Cita destacada</a></li>
-        <li><a href="#video">Vídeo destacado de hoy</a></li>
-      </ul>
-    </nav>
-    <form id="form" name="form" method="post" action="inicioSesion.php">
-      <span>Inicia sesión</span>
-      <input id="email" name="email" type="text" placeholder="Introduce tu email"
-      onfocus="if(this.placeholder=='') this.placeholder='Introduce tu email'"/>
-      <input id="contrasena" name="contrasena" type="password" placeholder=
-      "Introduce tu contraseña" onfocus="if(this.placeholder=='')this.placeholder=
-      'Introduce tu contraseña'"/>
-      <input type="submit" name="submit" id="button" value="Iniciar sesión"/>
-    </form>
+    <div>
+      <nav>
+        <ul>
+          <li><a target="_blank" href="http://www.ual.es">Página de la Universidad de Almería</a></li>
+          <li><a target="_blank" href="http://cms.ual.es/UAL/estudios/grados/GRADO4015">Grado en Informática - UAL</a></li>
+          <li><a target="_blank" href="http://cms.ual.es/UAL/estudios/grados/plandeestudios/asignaturas/asignatura/GRADO4015?idAss=40153316&idTit=4015">Página de la asignatura</a></li>
+        </ul>
+      </nav>
+      <form id="form" name="form" method="post" action="inicioSesion.php">
+        <input id="email" name="email" type="text" placeholder="Introduce tu email"
+        onfocus="if(this.placeholder=='') this.placeholder='Introduce tu email'"/>
+        <input id="contrasena" name="contrasena" type="password" placeholder=
+        "Introduce tu contraseña" onfocus="if(this.placeholder=='')this.placeholder=
+        'Introduce tu contraseña'"/>
+        <input type="submit" name="submit" id="button" value="Iniciar sesión"/>
+      </form>
+    </div>
+    <h1>Negocio electrónico</h1>
   </header>
-  
+
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -86,6 +86,7 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
+  
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -94,9 +95,11 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
+
   <iframe id="video" width="560" height="315" src=
   "https://www.youtube.com/embed/yLHlaqLZy2Y" allow="autoplay;
   encrypted-media" allowfullscreen></iframe>
+
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -105,12 +108,14 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
+
   <footer>
-    <div class="redes_sociales">
-      <a href="http://www.twitter.com">Twitter</a>
-      <a href="http://www.facebook.com">Facebook</a>
-    </div>
-    <div><a href="http://www.google.es">Google</a></div>
+    <ul class="redes_sociales">
+      <li><a href="http://www.twitter.com">Twitter</a></li>
+      <li><a href="http://www.facebook.com">Facebook</a></li>
+      <li><a href="http://www.instagram.com">Instagram</a></li>
+    </ul>
+    <div></div>
   </footer>
 </body>
 </html>
