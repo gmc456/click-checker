@@ -14,7 +14,7 @@
  */
 
 body {
-  background-color: rgb(51, 102, 255);
+  background-color: #22324D;
 }
 
 /**
@@ -47,7 +47,27 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #22324D;
+}
+
+/**
+ * 1. Anchura de la línea de separación entre artículos.
+ * 2. Color de la línea de separación (igual que el fondo).
+ * 3. Eliminación del borde de la línea de separación.
+ */
+
+hr {
+  height: 20px;
+  background-color: #22324D;
+  border: none;
+}
+
+/**
+ * 1. Margen inferior para los vídeos de la página.
+ */
+
+iframe {
+  margin-bottom: 20px;
 }
 
 /* ======================= CABECERA ======================= */
@@ -78,7 +98,7 @@ header {
  * Tamaño y separación de las secciones del menú de navegación.
  */
 
-#header-menu li {
+#header-menu li, #page-navigator li {
   font-size: 15px;
   margin: 0 35px;
 }
@@ -100,7 +120,6 @@ header {
 #header-title {
   text-align: center;
   padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 /**
@@ -118,6 +137,44 @@ header {
 
 #header-title > p {
   padding-top: 10px;
+}
+
+/**
+ * Formato del menú de navegación sobre los contenidos de la página.
+ */
+#page-navigator {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+/**
+ * Formato de los enlaces a los diferentes artículos de la página.
+ */
+.enlace-articulo{
+  text-align: center;
+  font-weight: bold;
+  background: #FF88A8;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/**
+ * Estilo de los párrafos donde se enlaza una fuente externa.
+*/
+
+.fuente {
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+/**
+ * Estilo de los enlaces que actúan como fuente de los artículos de la página.
+*/
+.enlace-fuente {
+  text-decoration: underline;
+  font-style: italic;
 }
 
 /* ======================= CONTENIDO ======================= */
@@ -144,6 +201,23 @@ header {
 .content-text {
   margin: 0 40px 0 40px;
   text-align: justify;
+}
+
+/**
+ * 1. Máxima anchura de las fotos y vídeos que se incluyan dentro de los artículos.
+ * 2. Alineado al centro de todas las fotos del contenido.
+ */
+
+.content-text img, .content-text iframe {
+  max-width: 920px;
+}
+
+/**
+ * 1. Alineado al centro de todos los vídeos y fotos de la página
+ */
+
+.video, .foto {
+  text-align: center;
 }
 
 /**
@@ -174,6 +248,8 @@ footer {
   width: 100%;
   height: 80px;
   background-color: #22324D;
+  text-align: center;
+  color: white;
 }
 
 /**
@@ -181,7 +257,6 @@ footer {
  */
 
 footer .menu-list {
-  float: right;
   margin-top: 20px;
   margin-bottom: 0;
 }
