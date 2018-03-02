@@ -4,56 +4,76 @@
 
 header {
   width: 100%;
-  background: black;
+  background: #22324D;
   color: white;
-  padding-top: 5px;
-  margin-bottom: 20px;
 }
 
 form {
-  float: right;
-  display: inline-block;
+  text-align: right;
   margin-right: 20px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 nav {
-  float: left;
-  display: inline-block;
-  margin-left: 10px;
+  text-align: center;
+  background: #FF88A8;
 }
 
-ul {
+nav ul {
   list-style-type: none;
-  margin: 0 5px 5px 0;
-  padding: 0px;
-  margin-top: 5px;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
 }
 
-li {
+nav ul li {
   display: inline;
   text-align: center;
-  padding-right: 20px;
+  font-size: 15px;
+}
+
+.lista_dcha{
+  padding-right: 70px;
 }
 
 a{
   text-decoration: none;
-  color: pink;
+  color: black;
 }
 
+#titulo{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
 h1 {
-  clear: both;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  line-height: .35;
+  font-size: 65px;
 }
 
-p{
-  padding-left: 20px;
+#descripcion {
+  padding-top: 10px;
 }
 
-footer > ul{
+article{
+  margin: 0 40px 0 40px;
+  text-align: justify;
+}
+
+h2{
+  font-size:35px;
+}
+
+span{
+  font-weight: bold;
+}
+
+h2,h3{
+  color: #22324D;
+}
+
+footer ul{
   text-align: center;
   background-color: black;
 }
