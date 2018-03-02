@@ -11,9 +11,9 @@
   <header>
     <nav id="header-menu">
       <ul class="menu-list">
-        <li><a target="_blank" href="http://www.ual.es">Página de la Universidad de Almería</a></li>
-        <li><a target="_blank" href="http://cms.ual.es/UAL/estudios/grados/GRADO4015">Grado en Informática - UAL</a></li>
-        <li><a target="_blank" href="http://cms.ual.es/UAL/estudios/grados/plandeestudios/asignaturas/asignatura/GRADO4015?idAss=40153316&idTit=4015">Página de la asignatura</a></li>
+        <li><a id="web-ual" target="_blank" href="http://www.ual.es">Página de la Universidad de Almería</a></li>
+        <li><a id="web-informatica" target="_blank" href="http://cms.ual.es/UAL/estudios/grados/GRADO4015">Grado en Informática - UAL</a></li>
+        <li><a id="web-negocio" target="_blank" href="http://cms.ual.es/UAL/estudios/grados/plandeestudios/asignaturas/asignatura/GRADO4015?idAss=40153316&idTit=4015">Página de la asignatura</a></li>
       </ul>
     </nav>
     <form id="header-form" name="form" method="post" action="inicioSesion.php">
@@ -22,7 +22,7 @@
       <input id="contrasena" name="contrasena" type="password" placeholder=
       "Introduce tu contraseña" onfocus="if(this.placeholder=='')this.placeholder=
       'Introduce tu contraseña'"/>
-      <input type="submit" name="submit" id="button" value="Iniciar sesión"/>
+      <input type="submit" name="submit" id="button-login" value="Iniciar sesión"/>
     </form>
 
     <div id="header-title">
@@ -35,9 +35,9 @@
 
     <nav id="page-navigator">
       <ul class="menu-list">
-        <li><a class="enlace-articulo" href="#tema1">Tema 1: NFC</a></li>
-        <li><a class="enlace-articulo" href="#tema2">Tema 2: Bitcoin</a></li>
-        <li><a class="enlace-articulo" href="#tema3">Tema 3: SEO</a></li>
+        <li><a id="tema-nfc" class="enlace-articulo" href="#tema1">Tema 1: NFC</a></li>
+        <li><a id="tema-bitcoin" class="enlace-articulo" href="#tema2">Tema 2: Bitcoin</a></li>
+        <li><a id="tema-seo" class="enlace-articulo" href="#tema3">Tema 3: SEO</a></li>
       </ul>
     </nav>
   </header>
@@ -94,9 +94,9 @@
         dejamos este vídeo para que aprendas todo sobre el NFC.
       </p>
       <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2ZxtP4ihuWE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="video-nfc" width="560" height="315" src="https://www.youtube.com/embed/2ZxtP4ihuWE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <p class="fuente">Fuente: <a class="enlace-fuente" href="https://www.xataka.com/moviles/nfc-que-es-y-para-que-sirve">Xataka</a></p>
+      <p class="fuente">Fuente: <a id="fuente-nfc" class="enlace-fuente" href="https://www.xataka.com/moviles/nfc-que-es-y-para-que-sirve">Xataka</a></p>
     </article>
 
     <hr>
@@ -178,7 +178,7 @@
         cobertura de criptomonedas Multicoin Capital. Esto hace que las monedas
         alternativas sean más atractivas que el pionero de la industria.
       </p>
-      <p class="fuente">Fuente: <a class="enlace-fuente" href="http://www.eleconomista.es/divisas/noticias/8977466/03/18/Ha-pasado-de-moda-el-bitcoin-Las-transacciones-de-la-criptodivisa-caen-en-picado.html">El Economista</a></p>
+      <p class="fuente">Fuente: <a id="fuente-bitcoin" class="enlace-fuente" href="http://www.eleconomista.es/divisas/noticias/8977466/03/18/Ha-pasado-de-moda-el-bitcoin-Las-transacciones-de-la-criptodivisa-caen-en-picado.html">El Economista</a></p>
     </article>
 
     <hr>
@@ -299,10 +299,10 @@
         cómo funcionan los motores de búsqueda:
       </p>
       <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LVV_93mBfSU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KyCYyoGusqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="video-seo1" width="560" height="315" src="https://www.youtube.com/embed/LVV_93mBfSU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="video-seo2" width="560" height="315" src="https://www.youtube.com/embed/KyCYyoGusqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <p class="fuente">Fuente: <a class="enlace-fuente" href="https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito/">40deFiebre</a></p>
+      <p class="fuente">Fuente: <a id="fuente-seo" class="enlace-fuente" href="https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito/">40deFiebre</a></p>
     </article>
   </div>
 
@@ -312,9 +312,9 @@
       todas sus novedades!
     </p>
     <ul class="menu-list">
-      <li><a href="https://twitter.com/ualmeria?lang=es"><img src="http://icons.iconarchive.com/icons/sicons/basic-round-social/512/twitter-icon.png" alt="Twitter logo"></a></li>
-      <li><a href="https://www.facebook.com/universidaddealmeria/"><img src="https://i.imgur.com/z5sMmml.png" alt="Facebook logo"></a></li>
-      <li><a href="https://www.instagram.com/explore/locations/237785460/universidad-de-almeria/"><img src="https://i.imgur.com/2PaVK6E.png" alt="Instagram logo"></a></li>
+      <li><a id="rrss-twitter" href="https://twitter.com/ualmeria?lang=es"><img src="http://icons.iconarchive.com/icons/sicons/basic-round-social/512/twitter-icon.png" alt="Twitter logo"></a></li>
+      <li><a id="rrss-facebook" href="https://www.facebook.com/universidaddealmeria/"><img src="https://i.imgur.com/z5sMmml.png" alt="Facebook logo"></a></li>
+      <li><a id="rrss-instagram" href="https://www.instagram.com/explore/locations/237785460/universidad-de-almeria/"><img src="https://i.imgur.com/2PaVK6E.png" alt="Instagram logo"></a></li>
     </ul>
   </footer>
 </body>
