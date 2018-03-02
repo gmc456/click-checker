@@ -38,8 +38,6 @@ body {
 .menu-list > li {
   display: inline;
   text-align: center;
-  font-size: 15px;
-  margin: 0 35px;
 }
 
 /**
@@ -67,67 +65,59 @@ header {
 }
 
 /**
- * Colocar el menú de navegación a la izquierda en la cabecera.
+ * 1. Menú de navegación en el centro.
+ * 2. Color del fondo del menú de navegación.
  */
 
 #header-menu {
-/*
-  float: left;
-  display: inline-block;
-  margin-left: 10px;
-*/
   text-align: center;
   background: #FF88A8;
 }
 
 /**
- * Colocar el formulario de inicio de sesión a la derecha en la cabecera.
+ * Tamaño y separación de las secciones del menú de navegación.
+ */
+
+#header-menu li {
+  font-size: 15px;
+  margin: 0 35px;
+}
+
+/**
+ * El formulario de inicio de sesión está a la derecha en la cabecera.
  */
 
 #header-form {
-/*
-  float: right;
-  display: inline-block;
-  margin-right: 20px;
-  margin-top: 5px;
-*/
   text-align: right;
   margin-right: 20px;
   margin-top: 10px;
 }
 
 /**
- * 1. Hacer que el título no se coloque alrededor de los elementos superiores.
- * 2. Colocar el título en el centro.
+ * Título (incluída descripción) ubicado en el centro de la cabecera.
  */
 
 #header-title {
-  display: block;
-  clear: both;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-h1 {
+/**
+ * Tamaño del título de la cabecera.
+ */
+
+#header-title > h1 {
   line-height: .35;
   font-size: 65px;
 }
 
-#header-title-description {
+/**
+ * Formato de la descripción de la cabecera.
+ */
+
+#header-title > p {
   padding-top: 10px;
-}
-
-h2{
-  font-size:35px;
-}
-
-h2,h3{
-  color: #22324D;
-}
-
-span{
-  font-weight: bold;
 }
 
 /* ======================= CONTENIDO ======================= */
@@ -138,7 +128,7 @@ span{
  */
 
 #content {
-  width: 900px;
+  width: 1000px;
   display: block;
   margin: 0px auto;
   padding-top: 10px;
@@ -147,7 +137,8 @@ span{
 }
 
 /**
- * Márgenes de los párrafos del contenido.
+ * 1. Márgenes del artículo del contenido.
+ * 2. Justificación del texto del artículo.
  */
 
 .content-text {
@@ -155,24 +146,59 @@ span{
   text-align: justify;
 }
 
+/**
+ * Tamaño de los h2 dentro del contenido.
+ */
+
+.content-text h2 {
+  font-size:35px;
+}
+
+/**
+ * Color de los títulos del contenido.
+ */
+
+.content-text h2,
+.content-text h3 {
+  color: #22324D;
+}
+
 /* ======================= PIE DE PÁGINA ======================= */
 
 /**
- * 1. El pie ocupa toda la franja inferior (NO REDUCIR PADDING).
+ * 1. El pie ocupa toda la franja inferior.
  * 2. Color del fondo del pie.
  */
 
 footer {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: black;
+  height: 80px;
+  background-color: #22324D;
 }
 
 /**
  * La lista de menú del pie de página está centrado.
  */
 
-footer > .menu-list {
-  text-align: center;
+footer .menu-list {
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/**
+ * Separación de los elementos de la lista de rrss.
+ */
+
+footer li {
+  margin: 0 15px;
+}
+
+/**
+ * Tamaño de los logos de la lista de rrss.
+ */
+
+.menu-list img {
+  width: 40px;
+  height: 40px;
 }
