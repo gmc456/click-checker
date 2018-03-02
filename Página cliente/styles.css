@@ -1,58 +1,158 @@
-*{
-    font-family: Segoe UI, sans-serif;
+/* ======================= GENERAL ======================= */
+
+/**
+ * La fuente principal de la web es Segoe UI, usando sans-serif en
+ * ausencia de ésta.
+ */
+
+* {
+  font-family: Segoe UI, sans-serif;
 }
 
-header {
-  width: 100%;
-  background: black;
-  color: white;
-  padding-top: 5px;
-  margin-bottom: 20px;
+/**
+ * Color de fondo de toda la página (se sobreescribe en cada elemento).
+ */
+
+body {
+  background-color: rgb(51, 102, 255);
 }
 
-form {
-  float: right;
-  display: inline-block;
-  margin-right: 20px;
-  margin-top: 5px;
-}
+/**
+ * Definimos una lista especial para los menús:
+ * 1. La lista es un bloque.
+ * 2. Los elementos de la lista no tienen "bullets".
+ */
 
-nav {
-  float: left;
-  display: inline-block;
-  margin-left: 10px;
-}
-
-ul {
+.menu-list {
+  display: block;
   list-style-type: none;
   margin: 0 5px 5px 0;
   padding: 0px;
   margin-top: 5px;
 }
 
-li {
+/**
+ * Elementos de las listas de menú se muestran en horizontal.
+ */
+
+.menu-list > li {
   display: inline;
   text-align: center;
   padding-right: 20px;
 }
 
-a{
+/**
+ * 1. Enlaces sin decoración.
+ * 2. Color de los enlaces.
+ */
+
+a {
   text-decoration: none;
   color: pink;
 }
 
-h1 {
+/* ======================= CABECERA ======================= */
+
+/**
+ * 1. Tamaño de la cabecera.
+ * 2. Color del contenido de la cabecera.
+ * 3. Color del fondo de la cabecera.
+ */
+
+header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/**
+ * Colocar el menú de navegación a la izquierda en la cabecera.
+ */
+
+#header-menu {
+  float: left;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/**
+ * Colocar el formulario de inicio de sesión a la derecha en la cabecera.
+ */
+
+#header-form {
+  float: right;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+/**
+ * 1. Hacer que el título no se coloque alrededor de los elementos superiores.
+ * 2. Colocar el título en el centro.
+ */
+
+#header-title {
+  display: block;
   clear: both;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-p{
-  padding-left: 20px;
+/* ======================= CONTENIDO ======================= */
+
+/**
+ * 1. El contenido es un bloque centrado de tamaño fijo.
+ * 2. Color del fondo del contenido.
+ */
+
+#content {
+  width: 900px;
+  display: block;
+  margin: 0px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
 }
 
-footer > ul{
-  text-align: center;
+/**
+ * Márgenes de los párrafos del contenido.
+ */
+
+.content-text {
+  margin: 15px 20px 15px 20px;
+}
+
+/**
+ * La imagen y el vídeo del contenido son bloques centrados.
+ */
+
+#content-quote,
+#content-video {
+  display: block;
+  margin: 30px auto;
+}
+
+/* ======================= PIE DE PÁGINA ======================= */
+
+/**
+ * 1. El pie ocupa toda la franja inferior (NO REDUCIR PADDING).
+ * 2. Color del fondo del pie.
+ */
+
+footer {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: black;
+}
+
+/**
+ * La lista de menú del pie de página está centrado.
+ */
+
+footer > .menu-list {
+  text-align: center;
 }
