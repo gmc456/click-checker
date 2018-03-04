@@ -58,6 +58,9 @@ function clickCounter(e) {
 
   if(elementId in observedElements) {
     observedElements[elementId]++;
+
+    //Línea para comprobar correcto funcionamiento
+    alert(elementId + " clicks: " + observedElements[elementId]);
   }
 }
 
