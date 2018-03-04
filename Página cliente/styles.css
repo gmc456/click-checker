@@ -6,7 +6,7 @@
  */
 
 * {
-  font-family: Segoe UI, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /**
@@ -14,7 +14,7 @@
  */
 
 body {
-  background-color: #22324D;
+  background-color: #22324d;
 }
 
 /**
@@ -25,17 +25,17 @@ body {
 
 .menu-list {
   display: block;
-  list-style-type: none;
-  margin-top: 0px;
+  margin-top: 0;
   padding-bottom: 5px;
-  padding-left: 0px;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 /**
  * Elementos de las listas de menú se muestran en horizontal.
  */
 
-.menu-list > li {
+.menu-list>li {
   display: inline;
   text-align: center;
 }
@@ -47,7 +47,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #22324D;
+  color: #22324d;
 }
 
 /**
@@ -58,8 +58,8 @@ a {
 
 hr {
   height: 20px;
-  background-color: #22324D;
   border: none;
+  background-color: #22324d;
 }
 
 /**
@@ -80,8 +80,8 @@ iframe {
 
 header {
   width: 100%;
-  background-color: #22324D;
   color: white;
+  background-color: #22324d;
 }
 
 /**
@@ -91,7 +91,7 @@ header {
 
 #header-menu {
   text-align: center;
-  background: #FF88A8;
+  background: #ff88a8;
 }
 
 /**
@@ -108,9 +108,9 @@ header {
  */
 
 #header-form {
-  text-align: right;
-  margin-right: 20px;
   margin-top: 10px;
+  margin-right: 20px;
+  text-align: right;
 }
 
 /**
@@ -118,45 +118,47 @@ header {
  */
 
 #header-title {
-  text-align: center;
   padding-top: 25px;
+  text-align: center;
 }
 
 /**
  * Tamaño del título de la cabecera.
  */
 
-#header-title > h1 {
-  line-height: .35;
+#header-title>h1 {
   font-size: 65px;
+  line-height: .35;
 }
 
 /**
  * Formato de la descripción de la cabecera.
  */
 
-#header-title > p {
+#header-title>p {
   padding-top: 10px;
 }
 
 /**
  * Formato del menú de navegación sobre los contenidos de la página.
  */
+
 #page-navigator {
-  text-align: center;
   padding-top: 15px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 /**
  * Formato de los enlaces a los diferentes artículos de la página.
  */
-.enlace-articulo{
-  text-align: center;
+
+.enlace-articulo {
   font-weight: bold;
-  background: #FF88A8;
   padding: 8px;
+  text-align: center;
   border-radius: 10px;
+  background: #ff88a8;
 }
 
 /**
@@ -165,16 +167,17 @@ header {
 
 .fuente {
   font-style: italic;
-  text-align: right;
   margin-bottom: 25px;
+  text-align: right;
 }
 
 /**
  * Estilo de los enlaces que actúan como fuente de los artículos de la página.
 */
+
 .enlace-fuente {
-  text-decoration: underline;
   font-style: italic;
+  text-decoration: underline;
 }
 
 /* ======================= CONTENIDO ======================= */
@@ -185,9 +188,9 @@ header {
  */
 
 #content {
-  width: 1000px;
   display: block;
-  margin: 0px auto;
+  width: 1000px;
+  margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: white;
@@ -225,16 +228,15 @@ header {
  */
 
 .content-text h2 {
-  font-size:35px;
+  font-size: 35px;
 }
 
 /**
  * Color de los títulos del contenido.
  */
 
-.content-text h2,
-.content-text h3 {
-  color: #22324D;
+.content-text h2, .content-text h3 {
+  color: #22324d;
 }
 
 /* ======================= PIE DE PÁGINA ======================= */
@@ -247,9 +249,9 @@ header {
 footer {
   width: 100%;
   height: 80px;
-  background-color: #22324D;
   text-align: center;
   color: white;
+  background-color: #22324d;
 }
 
 /**
