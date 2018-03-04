@@ -42,7 +42,7 @@ var observedElements = {
   'rrss-twitter' : 0,
   'rrss-facebook' : 0,
   'rrss-instagram' : 0
-}
+};
 
 /*
 La función obtiene el elemento sobre el que se ha hecho clic y, si su
