@@ -1,25 +1,3 @@
-//Código de ejemplo sacado de StackOverflow
-/*
-var arrayWithElements = new Array();
-
-function clickListener(e)
-{
-    var clickedElement=(window.event)
-                        ? window.event.srcElement
-                        : e.target,
-        tags=document.getElementsByTagName(clickedElement.tagName);
-
-    for(var i=0;i<tags.length;++i)
-    {
-      if(tags[i]==clickedElement)
-      {
-        arrayWithElements.push({tag:clickedElement.tagName,index:i});
-        console.log(arrayWithElements);
-      }
-    }
-}
-*/
-
 /*
 Declaramos un array asociativo observedElements que funciona como un Mapa.
 Las claves son los identificadores de los elementos que observamos y el valor
@@ -33,11 +11,8 @@ var observedElements = {
   'tema-nfc': 0,
   'tema-bitcoin': 0,
   'tema-seo': 0,
-  'video-nfc': 0,
   'fuente-nfc': 0,
   'fuente-bitcoin': 0,
-  'video-seo1': 0,
-  'video-seo2': 0,
   'fuente-seo': 0,
   'rrss-twitter': 0,
   'rrss-facebook': 0,
@@ -48,7 +23,7 @@ var observedElements = {
 La función obtiene el elemento sobre el que se ha hecho clic y, si su
 identificador está en observedElements, incrementa su contador.
 */
-function clickCounter(e) {
+document.onclick = function (e) {
   var clickedElement = (window.event) ?
     window.event.srcElement :
     e.target,
@@ -59,17 +34,17 @@ function clickCounter(e) {
   if (elementId in observedElements) {
     observedElements[elementId]++;
 
-    //Línea para comprobar correcto funcionamiento
-    alert(elementId + " clicks: " + observedElements[elementId]);
+    // Línea para comprobar correcto funcionamiento
+    // alert(elementId + " clicks: " + observedElements[elementId]);
   }
-}
+};
 
 /*
-Añadir función para enviar observedElements junto con la fecha de la sesión
-al servidor.
+Función ejecutada cuando el usuario cierra la página. Su objetivo es 'parsear'
+la información sobre los clicks (además de la url y la fecha actuales) en
+formato JSON y enviarlo al servidor mediante un POST request.
 */
-
-window.onbeforeunload = function() {
+window.onbeforeunload = function () {
   var data = '{' +
     '"url" : ' + window.location.href + ',' +
     '"fecha" : ' + new Date().toLocaleDateString() + ',' +
@@ -78,17 +53,11 @@ window.onbeforeunload = function() {
 
   // Sending and receiving data in JSON format using POST method
   var xhr = new XMLHttpRequest();
-  var url = "url";
+  var url = "https://requestb.in/1nt5x141";
+  // http://83.57.160.179:5010";
+
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-type", "application/json");
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      var json = JSON.parse(xhr.responseText);
-      console.log(json.email + ", " + json.password);
-    }
-  };
-  xhr.send(data);
-  // Si pones "return null" no aparece el 'pop-up'
-};
 
-document.onclick = clickCounter;
+  xhr.send(data);
+};

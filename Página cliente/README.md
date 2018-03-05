@@ -14,11 +14,8 @@ con identificadores creados para este fin.
   * *tema-bitcoin*
   * *tema-seo*
 * Contenido
-  * *video-nfc*
   * *fuente-nfc*
   * *fuente-bitcoin*
-  * *video-seo1*
-  * *video-seo2*
   * *fuente-seo*
 * Redes sociales
   * *rrss-twitter*
