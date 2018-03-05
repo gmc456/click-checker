@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clicking Tool</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    function comprobarURL(){
+      var input = document.getElementById("url-input").value;
+      
+      // Función que almacena en 'data' el HTML de la URL especificada en 'input'
+      $.ajax({
+        url: input,
+        success: function(data) {
+          alert(data);
+        }
+      });
+
+      console.log(String(data));
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>¿Quieres conocer los elementos más populares de tu página?</h1>
+    <h3>Primero, añade <a target="_blank" href="https://github.com/Varrrro/click-checker/blob/master/P%C3%A1gina%20cliente/clickTracker.js">este código</a> a tu página</h3>
+    <h3>A continuación, introduce la URL de tu página para consultar el número de 'clicks'
+      que los usuarios han realizado sobre los elementos de tu página *</h3>
+  </header>
+  <input id="url-input" type="text" placeholder="Introduce aquí la URL" onfocus="if(this.placeholder=='') this.placeholder='Introduce aquí la URL'" />
+  <input type="button" name="boton-analizar" id="analizar-button" value="Analizar" onclick="comprobarURL();"/>
+  <p id="aclaracion">
+    * Esta herramienta está diseñada para mostrar únicamente las estadísticas de aquellos elementos HTML que tengan un id propio
+  </p>
+</body>
+
+</html>
