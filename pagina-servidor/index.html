@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clicking Tool</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>¿Quieres conocer los elementos más populares de tu página?</h1>
+    <h3>Primero, añade <a target="_blank" href="https://github.com/Varrrro/click-checker/blob/master/P%C3%A1gina%20cliente/clickTracker.js">este código</a> a tu página</h3>
+    <h3>A continuación, introduce la URL de tu página para consultar el número de 'clicks'
+      que los usuarios han realizado sobre los elementos de tu página *</h3>
+  </header>
+  <input id="url" type="text" placeholder="Introduce aquí la URL" onfocus="if(this.placeholder=='') this.placeholder='Introduce aquí la URL'" />
+  <button type="button" name="boton-analizar">Analizar</button>
+  <p id="aclaracion">
+    * Esta herramienta está diseñada para mostrar únicamente las estadísticas de aquellos elementos HTML que tengan un id propio
+  </p>
+</body>
+
+</html>

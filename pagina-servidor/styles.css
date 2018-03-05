@@ -1,0 +1,112 @@
+/* ======================= GENERAL ======================= */
+
+/**
+ * La fuente principal de la web es Segoe UI, usando sans-serif en
+ * ausencia de ésta.
+ */
+
+* {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/**
+ * Estilo para toda la página, incluyendo imagen de fondo y alineación de
+ * texto al centro.
+ */
+
+body {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-image: url('http://simpledesktops.com/download/?desktop=4739');
+  background-size: cover;
+}
+
+/* ======================= CABECERA ======================= */
+
+/**
+ * 1. Margen inferior que separa el texto del input.
+ * 2. Color de letra del texto.
+ */
+
+header {
+  margin-bottom: 30px;
+  color: white;
+}
+
+/**
+ * Estilo para el título principal.
+ */
+
+h1 {
+  font-size: 50px;
+  text-shadow: black .1em .1em .2em;
+}
+
+/**
+ * Estilo para los textos secundarios.
+ */
+
+h3 {
+  font-size: 19px;
+  font-weight: lighter;
+  line-height: 30px;
+  margin-bottom: 0;
+  white-space: pre;
+}
+
+/**
+ * Estilo para los enlaces
+ */
+
+a {
+  color: #fece86;
+}
+
+/**
+ * Estilo para el TextField donde se introduce la URL.
+ *
+ * 1. Anchura y altura del TextField.
+ * 2. Indentación del 'placeholder'.
+ * 3. Radio del borde.
+ */
+
+input {
+  width: 450px;
+  height: 35px;
+  text-indent: 8px;
+  border-radius: 10px;
+}
+
+/**
+ * Estilo para los botones.
+ */
+
+button {
+  font-size: 20px;
+  font-weight: 600;
+  width: 125px;
+  height: 40px;
+  margin-left: 10px;
+  text-align: center;
+  color: white;
+  border-style: none;
+  border-color: #e99555;
+  border-radius: 10px;
+  background-color: #e99555;
+}
+
+/**
+ * Estilo para el párrafo donde se detallan las limitaciones de la herramienta.
+ * Incluye un margen superior para separarlo del resto de elementos.
+ */
+
+#aclaracion {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 35px;
+  color: white;
+}
