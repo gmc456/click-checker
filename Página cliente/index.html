@@ -5,7 +5,7 @@
   <title>Negocio Electrónico</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
-  <script src="modernizr-custom.js"></script>
+  <script src="clicktracker.js"></script>
 </head>
 <body>
   <header>
@@ -16,7 +16,7 @@
         <li><a id="web-negocio" target="_blank" href="http://cms.ual.es/UAL/estudios/grados/plandeestudios/asignaturas/asignatura/GRADO4015?idAss=40153316&idTit=4015">Página de la asignatura</a></li>
       </ul>
     </nav>
-    <form id="header-form" name="form" method="post" action="inicioSesion.php">
+    <form id="header-form" name="form" method="post">
       <input id="email" name="email" type="text" placeholder="Introduce tu email"
       onfocus="if(this.placeholder=='') this.placeholder='Introduce tu email'"/>
       <input id="contrasena" name="contrasena" type="password" placeholder=
@@ -94,7 +94,7 @@
         dejamos este vídeo para que aprendas todo sobre el NFC.
       </p>
       <div class="video">
-        <iframe id="video-nfc" width="560" height="315" src="https://www.youtube.com/embed/2ZxtP4ihuWE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2ZxtP4ihuWE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <p class="fuente">Fuente: <a id="fuente-nfc" class="enlace-fuente" href="https://www.xataka.com/moviles/nfc-que-es-y-para-que-sirve">Xataka</a></p>
     </article>
@@ -299,8 +299,8 @@
         cómo funcionan los motores de búsqueda:
       </p>
       <div class="video">
-        <iframe id="video-seo1" width="560" height="315" src="https://www.youtube.com/embed/LVV_93mBfSU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <iframe id="video-seo2" width="560" height="315" src="https://www.youtube.com/embed/KyCYyoGusqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LVV_93mBfSU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KyCYyoGusqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <p class="fuente">Fuente: <a id="fuente-seo" class="enlace-fuente" href="https://www.40defiebre.com/guia-seo/que-es-seo-por-que-necesito/">40deFiebre</a></p>
     </article>
@@ -312,9 +312,9 @@
       todas sus novedades!
     </p>
     <ul class="menu-list">
-      <li><a id="rrss-twitter" href="https://twitter.com/ualmeria?lang=es"><img src="http://icons.iconarchive.com/icons/sicons/basic-round-social/512/twitter-icon.png" alt="Twitter logo"></a></li>
-      <li><a id="rrss-facebook" href="https://www.facebook.com/universidaddealmeria/"><img src="https://i.imgur.com/z5sMmml.png" alt="Facebook logo"></a></li>
-      <li><a id="rrss-instagram" href="https://www.instagram.com/explore/locations/237785460/universidad-de-almeria/"><img src="https://i.imgur.com/2PaVK6E.png" alt="Instagram logo"></a></li>
+      <li><a href="https://twitter.com/ualmeria?lang=es"><img id="rrss-twitter" src="http://icons.iconarchive.com/icons/sicons/basic-round-social/512/twitter-icon.png" alt="Twitter logo"></a></li>
+      <li><a href="https://www.facebook.com/universidaddealmeria/"><img id="rrss-facebook" src="https://i.imgur.com/z5sMmml.png" alt="Facebook logo"></a></li>
+      <li><a href="https://www.instagram.com/explore/locations/237785460/universidad-de-almeria/"><img id="rrss-instagram" src="https://i.imgur.com/2PaVK6E.png" alt="Instagram logo"></a></li>
     </ul>
   </footer>
 </body>
