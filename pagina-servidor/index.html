@@ -6,6 +6,7 @@
   <title>Clicking Tool</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="urlchecker"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
       que los usuarios han realizado sobre los elementos de tu página *</h3>
   </header>
   <input id="url-input" type="text" placeholder="Introduce aquí la URL" onfocus="if(this.placeholder=='') this.placeholder='Introduce aquí la URL'" />
-  <input type="button" name="boton-analizar" id="analizar-button" value="Analizar" onclick="comprobarURL();"/>
+  <input type="button" name="boton-analizar" id="analizar-button" value="Analizar"/>
   <p id="aclaracion">
     * Esta herramienta está diseñada para mostrar únicamente las estadísticas de aquellos elementos HTML que tengan un id propio
   </p>
