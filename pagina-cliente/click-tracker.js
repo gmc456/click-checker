@@ -40,12 +40,20 @@ document.onclick = function (e) {
 };
 
 /*
-Función ejecutada cuando el usuario cierra la página. Su objetivo es 'parsear'
-la información sobre los clicks (además de la url y la fecha actuales) en
-formato JSON y enviarlo al servidor mediante un POST request.
+Función ejecutada cuando el usuario cierra la página. Su objetivo es enviar los
+datos recopilados durante la sesión al servidor mediante un POST request, usando
+AJAX.
 */
 window.onbeforeunload = function () {
-  var data = '{' +
+  $.post(
+    "https://requestb.in/1nt5x141",
+    {
+      url: String(window.location.href.substr(0, window.location.href.indexOf('#'))),
+      fecha: new Date().toLocaleDateString(),
+      datos: JSON.stringify(observedElements)
+    }
+  );
+  /*var data = '{' +
     '"url" : ' + window.location.href + ',' +
     '"fecha" : ' + new Date().toLocaleDateString() + ',' +
     '"datos" : ' + JSON.stringify(observedElements) +
@@ -54,10 +62,9 @@ window.onbeforeunload = function () {
   // Sending and receiving data in JSON format using POST method
   var xhr = new XMLHttpRequest();
   var url = "https://requestb.in/1nt5x141";
-  // http://83.57.160.179:5010";
 
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-type", "application/json");
 
-  xhr.send(data);
+  xhr.send(data);*/
 };
