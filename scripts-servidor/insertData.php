@@ -1,8 +1,5 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "root";
-$database = "myDB";
+include_once('db-constants.php');
 
 // Create connection
 $mysqli = new mysqli($host, $user, $password, $database);
