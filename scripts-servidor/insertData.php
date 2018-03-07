@@ -1,7 +1,9 @@
 <?php
 include_once('dbConnection.php');
 
-$url = $_POST['url'];
+$connection -> query("INSERT INTO registro VALUES ('hola', 'hola', 'hola', 0)");
+
+/*$url = $_POST['url'];
 $fecha = $_POST['fecha'];
 $datos = json_decode($_POST['datos'], true);
 
@@ -11,7 +13,7 @@ foreach($datos as $id => $clicks){
             '$url', '$fecha', '$id', '$clicks')";
 
   $connection->query($insert);
-}
+}*/
 
 $connection->close();
 ?>

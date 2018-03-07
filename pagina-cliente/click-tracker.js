@@ -44,15 +44,50 @@ Función ejecutada cuando el usuario cierra la página. Su objetivo es enviar lo
 datos recopilados durante la sesión al servidor mediante un POST request, usando
 AJAX.
 */
-window.onbeforeunload = function () {
+/*window.onbeforeunload = function () {
   $.post(
-    "http://83.57.160.179/insertData.php",
+   "https://requestb.in/188ixpu1",
     {
       url: String(window.location.href.substr(0, window.location.href.indexOf('#'))),
       fecha: new Date().toLocaleDateString(),
       datos: JSON.stringify(observedElements)
+    }, function(){
+      alert("Connection success");
     }
   );
+};*/
+  document.onclick = function () {
+    $.ajax({
+      type: "POST",
+      url: "http://192.168.1.46/insertData.php",
+      data: JSON.stringify(observedElements),
+      success: function (){
+        alert("Connection success");
+      },
+      error: function (){
+        alert("Connection failed");
+      }
+    });
+        /*url: String(window.location.href.substr(0, window.location.href.indexOf('#'))),
+        fecha: new Date().toLocaleDateString(),
+        datos: JSON.stringify(observedElements)
+      }, function(){
+        alert("Connection success");
+      }
+    );*/
+
+  /*$.post(
+    "http://192.168.1.46/insertData.php",
+    {
+      url: String(window.location.href.substr(0, window.location.href.indexOf('#'))),
+      fecha: new Date().toLocaleDateString(),
+      datos: JSON.stringify(observedElements)
+    },
+    {
+      success: alert("Connection success")
+    }
+  );*/
+
   /*var data = '{' +
     '"url" : ' + window.location.href + ',' +
     '"fecha" : ' + new Date().toLocaleDateString() + ',' +
