@@ -56,37 +56,15 @@ AJAX.
     }
   );
 };*/
-  document.onclick = function () {
-    $.ajax({
-      type: "POST",
-      url: "http://192.168.1.46/insertData.php",
-      data: JSON.stringify(observedElements),
-      success: function (){
-        alert("Connection success");
-      },
-      error: function (){
-        alert("Connection failed");
-      }
-    });
-        /*url: String(window.location.href.substr(0, window.location.href.indexOf('#'))),
-        fecha: new Date().toLocaleDateString(),
-        datos: JSON.stringify(observedElements)
-      }, function(){
-        alert("Connection success");
-      }
-    );*/
-
-  /*$.post(
-    "http://192.168.1.46/insertData.php",
+  window.onbeforeunload = function () {
+  $.post(
+    "http://83.57.160.179/insertData.php",
     {
       url: String(window.location.href.substr(0, window.location.href.indexOf('#'))),
-      fecha: new Date().toLocaleDateString(),
+      fecha: new Date().toLocaleString(),
       datos: JSON.stringify(observedElements)
-    },
-    {
-      success: alert("Connection success")
     }
-  );*/
+  );
 
   /*var data = '{' +
     '"url" : ' + window.location.href + ',' +
