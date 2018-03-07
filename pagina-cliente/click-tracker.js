@@ -46,7 +46,7 @@ AJAX.
 */
 window.onbeforeunload = function () {
   $.post(
-    "https://requestb.in/1nt5x141",
+    "http://83.57.160.179/insertData.php",
     {
       url: String(window.location.href.substr(0, window.location.href.indexOf('#'))),
       fecha: new Date().toLocaleDateString(),

@@ -1,4 +1,7 @@
 <?php
+include_once('dbConnection.php');
+
+/*
 $sql = "SELECT url FROM Table";
 $result = $conn->query($sql);
 
@@ -10,5 +13,7 @@ if ($result->num_rows > 0) {
 } else {
    echo "0 results";
 }
-$conn->close();
+*/
+
+$connection->close();
 ?>

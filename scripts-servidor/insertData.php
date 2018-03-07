@@ -1,13 +1,17 @@
 <?php
-include_once('db-constants.php');
+include_once('dbConnection.php');
 
-// Create connection
-$mysqli = new mysqli($host, $user, $password, $database);
+$url = $_POST['url'];
+$fecha = $_POST['fecha'];
+$datos = json_decode($_POST['datos'], true);
 
-// Check connection
-if($mysqli->connect_errno){
-  echo "Fallo al conectar a MySQL: (" . $mysqli -> connect_errno . ")" .
-  $mysqli->connect_error . "<br/>";
+//	Insertar cada id (de cada elemento HTML) con su nº de clicks
+foreach($datos as $id => $clicks){
+  $insert = "INSERT INTO registro VALUES (
+            '$url', '$fecha', '$id', '$clicks')";
+
+  $connection->query($insert);
 }
-echo "Conectado " . $mysqli->host_info . "<br/>";
+
+$connection->close();
 ?>
