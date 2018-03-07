@@ -1,7 +1,7 @@
 <?php
 include_once('dbConnection.php');
 
-$connection -> query("INSERT INTO registro VALUES ('hola', 'hola', 'hola', 0)");
+$connection -> query("INSERT INTO registro VALUES ('hola', '2000-04-04', 'hola', 0)");
 
 /*$url = $_POST['url'];
 $fecha = $_POST['fecha'];
